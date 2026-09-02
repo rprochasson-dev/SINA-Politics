@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur de Programmes - SINA Politics</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SINA <span>Politics</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="candidats.html">Candidats & Programmes</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="comparateur.html" class="active">Comparateur</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h2>Comparateur de Programmes</h2>
+                <p>Sélectionnez les candidats que vous souhaitez comparer et choisissez un thème.</p>
+            </div>
+        </section>
+
+        <section class="comparateur">
+            <div class="container">
+                <div class="selection">
+                    <h3>Sélectionnez les candidats</h3>
+                    <div class="candidats-checkbox">
+                        <label>
+                            <input type="checkbox" name="candidat" value="pecresse" onchange="updateComparaison()">
+                            Valérie Pécresse (LR)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="candidat" value="faure" onchange="updateComparaison()">
+                            Olivier Faure (PS)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="candidat" value="melenchon" onchange="updateComparaison()">
+                            Jean-Luc Mélenchon (LFI)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="selection">
+                    <h3>Sélectionnez un thème</h3>
+                    <select id="theme-select" onchange="updateComparaison()">
+                        <option value="economie">Économie</option>
+                        <option value="ecologie">Écologie</option>
+                        <option value="societe">Société</option>
+                    </select>
+                </div>
+
+                <div id="resultat-comparaison" class="resultat-comparaison">
+                    <!-- Le résultat s'affichera ici -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SINA Politics. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
