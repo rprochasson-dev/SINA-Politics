@@ -1,7 +1,7 @@
 // Données des candidats et leurs programmes par thème
 const candidatsData = {
     pecresse: {
-        nom: "Valérie Pécresse",
+        nom: "Candidat 1",
         parti: "Les Républicains (LR)",
         programme: {
             economie: [
@@ -22,7 +22,7 @@ const candidatsData = {
         }
     },
     faure: {
-        nom: "Olivier Faure",
+        nom: "Candidat 2",
         parti: "Parti Socialiste (PS)",
         programme: {
             economie: [
@@ -43,7 +43,7 @@ const candidatsData = {
         }
     },
     melenchon: {
-        nom: "Jean-Luc Mélenchon",
+        nom: "Candidat 3",
         parti: "La France Insoumise (LFI)",
         programme: {
             economie: [
